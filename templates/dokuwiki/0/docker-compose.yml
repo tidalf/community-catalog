@@ -16,5 +16,9 @@ dokuwiki-data:
   hostname: dokuwikidata
   image: ununseptium/dokuwiki-docker
   volumes:
-  - /var/www/html/data
-  - /var/www/html/lib/plugins
+  - nfs:/var/www/html/data
+  - nfs:/var/www/html/lib/plugins
+
+volumes:
+  nfs
+    driver: rancher-nfs 
