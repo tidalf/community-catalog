@@ -20,5 +20,5 @@ dokuwiki-data:
   - nfs:/var/www/html/lib/plugins
 
 volumes:
-  nfs
+  nfs:
     driver: rancher-nfs 
